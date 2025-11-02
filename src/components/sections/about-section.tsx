@@ -37,42 +37,42 @@ export function AboutSection() {
   ];
 
   return (
-    <section className="bg-background py-16">
+    <section className="bg-background py-8 md:py-16">
       <Container size="xl">
-        <div className="flex gap-12">
+        <div className="flex flex-col gap-8 md:flex-row md:gap-12">
           {/* Left Side - Content */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             {/* Title */}
-            <h2 className="text-primary text-[45px] font-normal">About MedFlo</h2>
+            <h2 className="text-2xl font-normal text-primary md:text-[45px]">About MedFlo</h2>
 
             {/* Description */}
-            <p className="text-foreground text-[20px] leading-relaxed">
+            <p className="text-base leading-relaxed text-foreground md:text-[20px]">
               MedFlo is dedicated to providing top-quality healthcare through a team of highly
               skilled specialists and cutting-edge clinics. With decades of experience, we ensure
               personalized care and advanced treatments to meet your needs.
             </p>
 
             {/* Statistics */}
-            <div className="flex gap-42">
+            <div className="flex flex-wrap gap-8 lg:gap-42">
               {stats.map((stat, index) => (
                 <div key={index}>
-                  <div className="text-primary mb-2 text-4xl font-bold">
+                  <div className="mb-2 text-3xl font-bold text-primary md:text-4xl">
                     <span ref={stat.ref}>{stat.value}</span>
                     {stat.suffix}
                   </div>
-                  <div className="text-foreground text-base">{stat.label}</div>
+                  <div className="text-sm text-foreground md:text-base">{stat.label}</div>
                 </div>
               ))}
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <Button
                 asChild
                 size="lg"
                 className="bg-primary hover:bg-primary/90 rounded-lg px-18 py-6 text-base font-semibold text-white"
               >
-                <Link href="/contact">Contact Us</Link>
+                <Link href="#">Contact Us</Link>
               </Button>
 
               <Button
@@ -81,7 +81,7 @@ export function AboutSection() {
                 size="lg"
                 className="group border-primary text-primary hover:bg-primary rounded-lg border-2 bg-transparent px-32 py-6 text-base font-semibold hover:text-white"
               >
-                <Link href="/book" className="flex items-center gap-18">
+                <Link href="#" className="flex items-center gap-18">
                   Book Appointment
                   <ChevronRight className="h-8 w-8 transition-transform group-hover:translate-x-1" />
                 </Link>

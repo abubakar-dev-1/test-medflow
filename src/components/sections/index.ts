@@ -2,7 +2,7 @@
  * Sections components barrel export
  */
 
-export { HeroSection } from "./hero-section";
+export { HeroSectionClient } from "./hero-section-client";
 export { BestDoctorsSection } from "./best-doctors-section";
 export { AboutSection } from "./about-section";
 export { ClinicsSection } from "./clinics-section";

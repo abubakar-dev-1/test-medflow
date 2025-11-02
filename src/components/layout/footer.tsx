@@ -10,45 +10,45 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#E8EDEF] py-12">
+    <footer className="bg-[#E8EDEF] py-8 md:py-12">
       <Container size="full">
-        <div className=" flex justify-between px-8">
+        <div className="mx-auto flex max-w-[1440px] flex-col gap-8 px-4 md:flex-row md:justify-between md:px-8 lg:gap-12">
           {/* Brand */}
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             <Link href="/" className="inline-block">
-              <span className="text-2xl font-bold text-primary">MedFlo</span>
+              <span className="text-xl font-bold text-primary md:text-2xl">MedFlo</span>
             </Link>
-            <div className="space-y-2 text-[17px] font-semibold text-foreground">
+            <div className="space-y-1 text-sm font-semibold text-foreground md:space-y-2 md:text-[17px]">
               <p>Lorem Ipsum, 235 Simply,</p>
               <p>printing, Psn 309 309</p>
             </div>
-            <div className="space-y-1 text-[17px] font-semibold text-foreground">
+            <div className="space-y-1 text-sm font-semibold text-foreground md:text-[17px]">
               <p>info@medflo.com</p>
               <p>+966 00000000</p>
             </div>
           </div>
-          <div  className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-2 lg:gap-8">
           {/* Quick Access */}
           <div>
-            <h3 className="mb-4 text-[22px] font-bold  text-primary">Quick Access</h3>
-            <ul className="space-y-3">
+            <h3 className="mb-3 text-lg font-bold text-primary md:mb-4 md:text-[22px]">Quick Access</h3>
+            <ul className="space-y-2 md:space-y-3">
               <li>
-                <Link href="/book" className="text-[17px] text-foreground hover:text-primary">
+                <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   Book Appointments
                 </Link>
               </li>
               <li>
-                <Link href="/appointments" className="text-[17px] text-foreground hover:text-primary">
+                <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   My Appointments
                 </Link>
               </li>
               <li>
-                <Link href="/family" className="text-[17px] text-foreground hover:text-primary">
+                <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   Family Members
                 </Link>
               </li>
               <li>
-                <Link href="/notifications" className="text-[17px] text-foreground hover:text-primary">
+                <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   Notifications
                 </Link>
               </li>
@@ -57,15 +57,15 @@ export function Footer() {
 
           {/* Account */}
           <div>
-            <h3 className="mb-4 text-[22px] font-bold text-primary">Account</h3>
-            <ul className="space-y-3">
+            <h3 className="mb-3 text-lg font-bold text-primary md:mb-4 md:text-[22px]">Account</h3>
+            <ul className="space-y-2 md:space-y-3">
               <li>
-                <Link href="/account" className="text-[17px] text-foreground hover:text-primary">
+                <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   My Account
                 </Link>
               </li>
               <li>
-                <Link href="/profile" className="text-[17px] text-foreground hover:text-primary">
+                <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   Manage Profile
                 </Link>
               </li>
@@ -74,20 +74,20 @@ export function Footer() {
 
           {/* Clinic Services */}
           <div>
-            <h3 className="mb-4 text-[22px] font-bold  text-primary">Clinic Services</h3>
-            <ul className="space-y-3">
+            <h3 className="mb-3 text-lg font-bold text-primary md:mb-4 md:text-[22px]">Clinic Services</h3>
+            <ul className="space-y-2 md:space-y-3">
               <li>
-                <Link href="/promotions" className="text-[17px] text-foreground hover:text-primary">
+                <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   Promotions
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-[17px] text-foreground hover:text-primary">
+                <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-[17px] text-foreground hover:text-primary">
+                <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   About Us
                 </Link>
               </li>
@@ -96,25 +96,25 @@ export function Footer() {
 
           {/* Support & Policies */}
           <div>
-            <h3 className="mb-4 text-[22px] font-bold text-primary">Support & Policies</h3>
-            <ul className="space-y-3">
+            <h3 className="mb-3 text-lg font-bold text-primary md:mb-4 md:text-[22px]">Support & Policies</h3>
+            <ul className="space-y-2 md:space-y-3">
               <li>
-                <Link href="/privacy" className="text-[17px] text-foreground hover:text-primary">
+                <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-[17px] text-foreground hover:text-primary">
+                <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/support" className="text-[17px] text-foreground hover:text-primary">
+                <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   Support
                 </Link>
               </li>
               <li>
-                  <Link href="/faq" className="text-[17px] text-foreground hover:text-primary">
+                  <Link href="#" className="text-sm text-foreground hover:text-primary md:text-[17px]">
                   FAQ
                 </Link>
               </li>
@@ -124,21 +124,21 @@ export function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-12 px-18 flex flex-col items-center justify-between gap-4 pt-8 md:flex-row">
-          <p className="text-sm text-foreground">© MedFlo {currentYear}</p>
+        <div className="mx-auto mt-8 flex max-w-[1440px] flex-col items-center justify-between gap-4 border-t border-gray-300 px-4 pt-6 md:mt-12 md:flex-row md:px-8 md:pt-8">
+          <p className="text-xs text-foreground md:text-sm">© MedFlo {currentYear}</p>
 
-          <div className="flex items-center gap-4 text-sm text-foreground">
-            <Link href="/privacy" className="hover:text-primary">
+          <div className="flex items-center gap-3 text-xs text-foreground md:gap-4 md:text-sm">
+            <Link href="#" className="hover:text-primary">
               Privacy Policy
             </Link>
             <span>|</span>
-            <Link href="/terms" className="hover:text-primary">
+            <Link href="#" className="hover:text-primary">
               Terms & Conditions
             </Link>
           </div>
 
           {/* Social Icons */}
-          <div className="flex gap-4">
+          <div className="flex gap-3 md:gap-4">
             <a
               href="https://linkedin.com"
               target="_blank"
@@ -146,7 +146,7 @@ export function Footer() {
               className="text-foreground transition-colors hover:text-primary"
               aria-label="LinkedIn"
             >
-              <Linkedin size={20} />
+              <Linkedin className="h-5 w-5 md:h-6 md:w-6" />
             </a>
             <a
               href="https://twitter.com"
@@ -155,14 +155,14 @@ export function Footer() {
               className="text-foreground transition-colors hover:text-primary"
               aria-label="Twitter"
             >
-              <Twitter size={20} />
+              <Twitter className="h-5 w-5 md:h-6 md:w-6" />
             </a>
             <a
               href="mailto:info@medflo.com"
               className="text-foreground transition-colors hover:text-primary"
               aria-label="Email"
             >
-              <Mail size={20} />
+              <Mail className="h-5 w-5 md:h-6 md:w-6" />
             </a>
             <a
               href="https://youtube.com"
@@ -171,7 +171,7 @@ export function Footer() {
               className="text-foreground transition-colors hover:text-primary"
               aria-label="YouTube"
             >
-              <Youtube size={20} />
+              <Youtube className="h-5 w-5 md:h-6 md:w-6" />
             </a>
           </div>
         </div>

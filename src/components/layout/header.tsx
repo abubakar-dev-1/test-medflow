@@ -10,22 +10,22 @@ import { Container } from "@/components/common";
 
 export function Header() {
   return (
-    <header className=" w-full  bg-[#DEE3EB]">
+    <header className="w-full bg-[#DEE3EB]">
       <Container size="full">
-        <nav className="flex h-20 items-center justify-between px-8">
+        <nav className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-4 md:h-20 md:px-8">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-[32px] font-bold text-primary">MedFlo</span>
+            <span className="text-2xl font-bold text-primary md:text-[32px]">MedFlo</span>
           </Link>
 
           {/* Right Icons */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3 md:gap-6">
             {/* Dark Mode Toggle */}
             <button
               className="text-primary transition-colors hover:text-primary"
               aria-label="Toggle dark mode"
             >
-              <Moon size={24} />
+              <Moon className="h-5 w-5 md:h-6 md:w-6" />
             </button>
 
             {/* Notifications */}
@@ -33,7 +33,7 @@ export function Header() {
               className="text-primary transition-colors hover:text-primary"
               aria-label="Notifications"
             >
-              <Bell size={24} />
+              <Bell className="h-5 w-5 md:h-6 md:w-6" />
             </button>
 
             {/* User Profile */}
@@ -41,7 +41,7 @@ export function Header() {
               className="text-primary transition-colors hover:text-primary"
               aria-label="User profile"
             >
-              <User size={24} />
+              <User className="h-5 w-5 md:h-6 md:w-6" />
             </button>
           </div>
         </nav>

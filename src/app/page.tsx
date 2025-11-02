@@ -1,5 +1,5 @@
 import {
-  HeroSection,
+  HeroSectionClient,
   BestDoctorsSection,
   AboutSection,
   ClinicsSection,
@@ -10,7 +10,7 @@ import {
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <HeroSection />
+      <HeroSectionClient />
       <BestDoctorsSection />
       <AboutSection />
       <ClinicsSection />

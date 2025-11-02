@@ -30,17 +30,18 @@ export function ArticlesSection() {
   }, [api]);
 
   return (
-    <section className="bg-background py-16">
+    <section className="bg-background py-8 md:py-16">
       <Container size="xl">
         {/* Section Header */}
-        <div className="mb-8 flex items-center justify-between">
-          <h2 className="text-[45px] font-normal text-primary">articles:</h2>
+        <div className="mb-6 flex items-center justify-between md:mb-8">
+          <h2 className="text-2xl font-normal text-primary md:text-[45px]">articles:</h2>
           <Link
-            href="/articles"
-            className="flex items-center gap-2 rounded-full bg-primary px-6 py-2 text-[18px] font-bold text-white transition-all hover:bg-primary/90"
+            href="#"
+            className="flex items-center gap-1 rounded-full bg-primary px-4 py-1.5 text-sm font-bold text-white transition-all hover:bg-primary/90 md:gap-2 md:px-6 md:py-2 md:text-[18px]"
           >
-            View All
-            <ChevronRight className="h-6 w-6" />
+            <span className="hidden sm:inline">View All</span>
+            <span className="sm:hidden">All</span>
+            <ChevronRight className="h-4 w-4 md:h-6 md:w-6" />
           </Link>
         </div>
 
@@ -53,11 +54,11 @@ export function ArticlesSection() {
           }}
           className="w-full"
         >
-          <CarouselContent className="-ml-4">
+          <CarouselContent className="-ml-2 md:-ml-4">
             {ARTICLES.map((article) => (
-              <CarouselItem key={article.id} className="basis-1/5 pl-4">
+              <CarouselItem key={article.id} className="basis-1/2 pl-2 sm:basis-1/3 md:basis-1/4 md:pl-4 lg:basis-1/5">
                 <Link
-                  href={`/articles/${article.id}`}
+                 href="/"
                   className="group block overflow-hidden rounded-3xl shadow-lg transition-all hover:shadow-xl"
                 >
                   <div className="relative aspect-3/4">
@@ -98,7 +99,7 @@ export function ArticlesSection() {
                       )}
 
                       {/* Title */}
-                      <h3 className="text-base font-semibold leading-tight text-white">
+                      <h3 className="md:text-base text-[12px]  font-semibold leading-tight text-white">
                         {article.title}
                       </h3>
                     </div>
@@ -109,23 +110,23 @@ export function ArticlesSection() {
           </CarouselContent>
 
           {/* Navigation Controls */}
-          <div className="mt-8 flex items-center justify-center gap-4">
+          <div className="mt-6 flex items-center justify-center gap-3 md:mt-8 md:gap-4">
             {/* Previous Button */}
             <button
               onClick={() => api?.scrollPrev()}
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white transition-all hover:bg-primary/90"
+              className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-white transition-all hover:bg-primary/90 md:h-10 md:w-10"
               aria-label="Previous"
             >
-              <ChevronLeft className="h-5 w-5" />
+              <ChevronLeft className="h-4 w-4 md:h-5 md:w-5" />
             </button>
 
             {/* Dots Indicator */}
-            <div className="flex gap-2">
+            <div className="flex gap-1.5 md:gap-2">
               {Array.from({ length: Math.min(count, 5) }).map((_, index) => (
                 <button
                   key={index}
                   onClick={() => api?.scrollTo(index)}
-                  className={`h-2 w-2 rounded-full transition-all ${
+                  className={`h-1.5 w-1.5 rounded-full transition-all md:h-2 md:w-2 ${
                     index === current % 5 ? "bg-primary" : "bg-gray-300"
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
@@ -136,10 +137,10 @@ export function ArticlesSection() {
             {/* Next Button */}
             <button
               onClick={() => api?.scrollNext()}
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white transition-all hover:bg-primary/90"
+              className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-white transition-all hover:bg-primary/90 md:h-10 md:w-10"
               aria-label="Next"
             >
-              <ChevronRight className="h-5 w-5" />
+              <ChevronRight className="h-4 w-4 md:h-5 md:w-5" />
             </button>
           </div>
         </Carousel>
