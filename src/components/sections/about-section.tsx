@@ -53,7 +53,7 @@ export function AboutSection() {
             </p>
 
             {/* Statistics */}
-            <div className="flex flex-wrap gap-8 lg:gap-42">
+            <div className="flex flex-wrap justify-between w-full lg:w-[70%]">
               {stats.map((stat, index) => (
                 <div key={index}>
                   <div className="mb-2 text-3xl font-bold text-primary md:text-4xl">

@@ -40,4 +40,46 @@ export const ARTICLES: Article[] = [
     type: "question",
 
   },
+  {
+    id: "6",
+    title: "Wellness Insights: Your Path to Better Health",
+    image: "/promo3.png",
+    type: "date",
+
+  },
+  {
+    id: "7",
+    title: "Wellness Insights: Your Path to Better Health",
+    image: "/promo2.png",
+    type: "default",
+
+  },
+  {
+    id: "8",
+    title: "Wellness Insights: Your Path to Better Health",
+    image: "/promo5.png",
+    type: "question",
+
+  },
+  {
+    id: "9",
+    title: "Wellness Insights: Your Path to Better Health",
+    image: "/promo3.png",
+    type: "date",
+
+  },
+  {
+    id: "10",
+    title: "Wellness Insights: Your Path to Better Health",
+    image: "/promo2.png",
+    type: "default",
+
+  },
+  {
+    id: "11",
+    title: "Wellness Insights: Your Path to Better Health",
+    image: "/promo5.png",
+    type: "question",
+
+  },
 ];
